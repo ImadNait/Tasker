@@ -1,0 +1,76 @@
+body {
+    background-image: url(../public/forest-5855196.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    float: center;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+h1 {
+    font-size: 3em;
+    line-height: 1.1;
+    font-weight: bold;
+    color: white;
+    position: relative;
+  }
+
+form{
+  border: 1px solid hsl(0, 0%, 74%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 10px;
+  box-shadow: hsl(0, 0%, 74%);
+  padding: 20px;
+  margin: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  
+}
+button{
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 5em;
+  align-self: center;
+}
+button:hover{
+  transform: scale(1.02);
+  transition: 1s ease;
+}
+.sendTo{
+  color: white;
+  font-size: 14px;
+}
+div .error{
+  color: rgb(255, 67, 67);
+  font-size: 16px;
+}
+
+
+input:focus {
+  border: white;
+  transform: scale(1.02);
+  transition: 0.5s ease;
+}

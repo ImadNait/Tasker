@@ -1,0 +1,211 @@
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  background-image: url(../public/forest-5855196.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  float: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: rgb(255, 255, 255);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto purple;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.card {
+  border: 1px solid hsl(0, 0%, 74%);
+  border-radius: 10px;
+  box-shadow: hsl(0, 0%, 74%);
+  padding: 20px;
+  margin: 150px;
+  text-align: center;
+  max-width: 700px;
+  display: inline-block;
+  overflow: auto;
+  position:relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+.card:hover{
+  border-color: rgba(255, 255, 255, 0.63);
+  transition-duration: 0.5s;
+}
+label {
+  font-weight: bold;
+  text-align: center;
+}
+input {
+  width: 20rem;
+  height: 3rem;
+  font-size: larger;
+  font-weight: bold;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(109, 58, 58, 0)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+input:hover{
+  border-color: rgba(255, 255, 255, 0.705);
+}
+input:focus{
+  border: 2px solid;
+  border-color: #ffffff;
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.534);
+}
+.text {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-right: 18px;
+  margin-left: 10px;
+}
+.inputa {
+  height: 70px;
+  width: 350px;
+  font-size: xx-large;
+  color: rgba(208, 223, 255, 0.952);
+}
+.addbutton {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-block;
+  border-color: transparent;
+}
+#clr {
+  width: 160px;
+  height: 70px;
+  border: 2px solid rgba(255, 255, 255, 0.39);
+  border-radius: 20px;
+  background: transparent;
+}
+#clr:hover{
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.342),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.377);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: 0.8s ease;
+}
+.edit{
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: xx-large;
+}
+#delete{
+  height: 60px;
+}
+#delete:hover{
+  border-color: rgba(172, 0, 0, 0.61);
+}
+#opt {
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+#check {
+  height: 34px;
+  width: 34px;
+  background-color: white;
+}
+key {
+  font-size: xx-large;
+}
+#tdl {
+  right: 80%;
+  top: 100%;
+  position: absolute;
+}
+
+.moveContainer {
+  display: flex;
+  flex-direction: column;
+}
+.bUp,
+.bDown {
+  flex: 0 0 auto;
+}
+.listItem {
+  font-size: 18px;
+}
+.tasks {
+  display: block;
+}
+.taskerror{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+
+}
+
