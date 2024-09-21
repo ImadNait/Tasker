@@ -8,7 +8,7 @@ const bcrypt = require('bcrypt')
 const secretKey = process.env.secret_key
 const getAllUsers = async (req, res)=>{
     try{
-    const data = await User.find()
+    const data = await User.find();
     res.json(data)
 }
     catch(err){
