@@ -19,7 +19,7 @@ export default function Login(){
     console.log(userData)
     const response = await axios({
         method: 'POST',
-        url:'http://localhost:4000/users/login', 
+        url:'/users/login', 
         headers:{ 'Content-Type': 'application/json' },
         mode:'cors',
         data: JSON.stringify(userData)
