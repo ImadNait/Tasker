@@ -21,7 +21,7 @@ export default function Form(){
         console.log(userData)
           const response = await axios({
             method: 'POST',
-            url:'http://localhost:4000/users/signup',
+            url:'/users/signup',
             headers: { 'Content-Type': 'application/json' },
             mode: 'cors',
             data: JSON.stringify(userData), 
