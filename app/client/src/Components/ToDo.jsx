@@ -19,7 +19,7 @@ export default function ToDo() {
       const token = localStorage.getItem('token');
       console.log(token);
       
-    const response = await axios(`http://localhost:4000/users/update/tasks/${token}`,{
+    const response = await axios(`/users/update/tasks/${token}`,{
     method:'PUT',
     headers:{ 'Content-Type': 'application/json' },
     mode: 'cors',
