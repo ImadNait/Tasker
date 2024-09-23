@@ -9,7 +9,7 @@ const secretKey = process.env.secret_key
 const getAllUsers = async (req, res)=>{
     try{
     const data = await User.find();
-    res.json(data);
+    res.json(data)
 }
     catch(err){
         res.status(500).json({ error: error.message })
@@ -25,7 +25,7 @@ function authToken(id) {
 const createUser = async (req, res)=>{
     try{
     const newUser = new User(req.body);
-    const {token} = authToken(newUser._id)
+    const {token} = authToken(newUser._id);
     console.log(newUser, token)
     res.cookie('jwt', token, { httpOnly:true, maxAge: maxAge*1000})
     await newUser.save();
