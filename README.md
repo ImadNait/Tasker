@@ -7,7 +7,7 @@ An authenticated ToDo app using MERN stack, users and their tasks are stored in 
 * **ToDo app**: A todo app which allows users to add, delete, and order their tasks.
 * **Fetch API**: Axios api that fetches and sends data to the backend.
 ### Backend features:
-* **User authentication**: An authentication system which allows users create their own accounts with Signup/Login options.
+* **User authentication**: An authentication system using JWT which allows users to create their own accounts with Signup/Login options.
 * **Data storage**: A users collection which is stored in MongoDB database.
 * **Task Updates**: Updates users' tasks in their database informations.
 
