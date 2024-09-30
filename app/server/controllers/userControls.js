@@ -9,7 +9,7 @@ const secretKey = process.env.secret_key
 const getAllUsers = async (req, res)=>{
     try{
     const data = await User.find();
-    res.json(data);
+    res.json(data)
 }
     catch(err){
         res.status(500).json({ error: error.message })
