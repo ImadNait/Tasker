@@ -111,7 +111,7 @@ const addTasks = async(req, res)=>{
         console.log(error);
         console.error('Token expired');
     } else {
-        console.error('Error decoding token:', error);
+        console.error('Error decoding token:', error)
     }
     res.status(500).json({ error: 'Server Error' });
       }
