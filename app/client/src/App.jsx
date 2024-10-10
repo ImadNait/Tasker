@@ -1,7 +1,7 @@
 import './App.css';
-import ToDo from './Components/ToDo';
-import Form from './Components/Signup';
-import Login from './Components/Login';
+import ToDo from './Pages/ToDo';
+import Form from './Pages/Signup';
+import Login from './Pages/Login';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App(){
  return(<Router>
