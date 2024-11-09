@@ -88,14 +88,14 @@ const loginUser = async (req, res)=>{
 
 const addTasks = async(req, res)=>{
  try {
-    const token = req.params.token
+    const token = req.params.token;
     console.log(token);
     
     const decodedToken = jwt.verify(token, secretKey);
     decodedToken.exp = Math.floor(Date.now() / 1000) + 60 * 60*3;
     console.log(decodedToken);
-    const userId = decodedToken.userId
-    console.log(userId)
+    const userId = decodedToken.userId;
+    console.log(userId);
     const newTask = req.body;    
     const user = await User.findById(userId, req.params);
     if (!user) {
